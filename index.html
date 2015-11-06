@@ -59,6 +59,8 @@ var svg = d3.select("body").append("svg")
 d3.csv("industry_means.csv", function(error, data) {
 if (error) throw error;
 
+data.sort(function(a,b) {return b.paid_leave-a.paid_leave;});
+
 var compNames = d3.keys(data[0]).filter(function(key) { return key !== "industry_parsed"; });
 
 data.forEach(function(d) {
@@ -74,7 +76,8 @@ svg.append("g")
       .attr("transform", "translate(-10," + height + ")")
 .call(xAxis)
 .selectAll("text")
-.attr("dx", "-7em")
+.attr("dx", "-.7em")
+.style("text-anchor", "end")
 .attr("transform", "rotate(-90)" );
 
   svg.append("g")
@@ -102,12 +105,11 @@ var industry = svg.selectAll(".industry")
 .attr("height", function(d) { return height - y(d.value); })
 .style("fill", function(d) { return color(d.name); });
 
-
   var legend = svg.selectAll(".legend")
       .data(compNames.slice().reverse())
     .enter().append("g")
       .attr("class", "legend")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+      .attr("transform", function(d, i) { return "translate(-60," + i * 20 + ")"; });
 
   legend.append("rect")
       .attr("x", width - 18)
