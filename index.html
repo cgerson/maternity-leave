@@ -23,10 +23,17 @@ body {
 
 </style>
 <body>
-<script src="//d3js.org/d3.v3.min.js"></script>
+  <form> Sort by: <br><br>
+    <input type="radio" name="sortby" value="paid_leave" checked>paid
+    <input type="radio" name="sortby" value="unpaid_leave">unpaid
+  </form>
+  
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <script>
 
-var margin = {top: 20, right: 20, bottom: 140, left: 40},
+  
+  var margin = {top: 20, right: 20, bottom: 140, left: 40},
     width = 1060 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -49,29 +56,79 @@ var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left")
     .tickFormat(d3.format(".2s"));
+  
+  function update(){
 
+  d3.select("svg")
+       .remove();
+  
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  
+  var sortby = d3.select('input[name="sortby"]:checked').node().value
 
-d3.csv("industry_means.csv", function(error, data) {
-if (error) throw error;
+  console.log("radio",sortby);
+  
+  d3.csv("industry_means_counts.csv", function(error, rawdata) {
+  if (error) throw error;
+  
+  rawdata.forEach(function (d) {
+  d.paid_leave = +d.paid_leave;
+  d.unpaid_leave = +d.unpaid_leave;
+  });
 
-data.sort(function(a,b) {return b.paid_leave-a.paid_leave;});
+  if(sortby === "unpaid_leave"){
+  rawdata.sort(function(a,b) {return b.unpaid_leave - a.unpaid_leave});
+  }
+  else{
+  rawdata.sort(function(a,b) {return b.paid_leave - a.paid_leave});
+  }
+  
+  var fields = d3.keys(rawdata[0]).filter(function(key) { return key !== "industry" && key!== "measure"; });
 
-var compNames = d3.keys(data[0]).filter(function(key) { return key !== "industry_parsed"; });
+  // console.log("compnames",fields);
 
-data.forEach(function(d) {
-    d.comp = compNames.map(function(name) { return {name: name, value: +d[name]}; });
-});
+  rawdata.forEach(function(d) {
+    d.comp = fields.map(function(name) { return {name: name, value: +d[name]}; });
+  });
 
-x0.domain(data.map(function(d) { return d.industry_parsed; }));
-  x1.domain(compNames).rangeRoundBands([0, x0.rangeBand()]);
-  y.domain([0, d3.max(data, function(d) { return d3.max(d.comp, function(d) { return d.value; }); })]);
+  // filter for only mean values
+  var data = rawdata.filter(function(d) 
+  { 
 
-svg.append("g")
+        if( d["measure"] == "mean")
+        { 
+            return d;
+        } 
+
+  })
+
+  // filter for only count values
+  var countsdata = rawdata.filter(function(d) 
+  { 
+
+        if( d["measure"] == "count")
+        { 
+            return d;
+        } 
+
+    })
+
+  console.log("data",data);
+  console.log("counts",countsdata);
+
+  console.log(sortby);
+  
+  x0.domain(data.map(function(d) { return d.industry; }));
+  x1.domain(fields).rangeRoundBands([0, x0.rangeBand()]);
+  y.domain([0, d3.max(data, function(d) {
+  return d3.max(d.comp, function(d) { return d.value; }); })
+  ]);
+ 
+  svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(-10," + height + ")")
 .call(xAxis)
@@ -88,25 +145,28 @@ svg.append("g")
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-.text("Weeks");
+  .text("Weeks");
 
-var industry = svg.selectAll(".industry")
+  var industry = svg.selectAll(".industry")
       .data(data)
     .enter().append("g")
       .attr("class", "g")
-.attr("transform", function(d) { return "translate(" + x0(d.industry_parsed) + ",0)"; });
+.attr("transform", function(d) { return "translate(" + x0(d.industry) + ",0)"; });
 
   industry.selectAll("rect")
-      .data(function(d) { return d.comp; })
-    .enter().append("rect")
+  .data(function(d) {
+  console.log(d.comp);
+  return d.comp;
+  }).enter().append("rect")
       .attr("width", x1.rangeBand())
       .attr("x", function(d) { return x1(d.name); })
-      .attr("y", function(d) { return y(d.value); })
-.attr("height", function(d) { return height - y(d.value); })
-.style("fill", function(d) { return color(d.name); });
+  .attr("y", function(d) {return y(d.value); })
+  .attr("height", function(d) {return height - y(d.value); })
+  .style("fill", function(d) { return color(d.name); });
 
+  // legend
   var legend = svg.selectAll(".legend")
-      .data(compNames.slice().reverse())
+      .data(fields.slice().reverse())
     .enter().append("g")
       .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(-60," + i * 20 + ")"; });
@@ -122,8 +182,14 @@ var industry = svg.selectAll(".industry")
       .attr("y", 9)
 .attr("dy", ".35em")
 .style("text-anchor", "end")
-      .text(function(d) { return d; });
+  .text(function(d) { return d; });
+  
+  });
+  };
+  
+  d3.selectAll("input")
+  .on("change",update);
 
-});
+  update();
 
-</script>
+  </script>
