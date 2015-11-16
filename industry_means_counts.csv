@@ -1,75 +1,79 @@
 industry,measure,paid_leave,unpaid_leave
 Accounting services,mean,10.0,8.5
 Accounting services,count,5.0,2.0
-Advertising,mean,6.8,5.75
-Advertising,count,10.0,4.0
-Aerospace,mean,5.0,9.0
-Aerospace,count,6.0,4.0
+Advertising,mean,6.36363636364,5.75
+Advertising,count,11.0,4.0
+Aerospace,mean,4.28571428571,9.6
+Aerospace,count,7.0,5.0
 Auto dealers,mean,8.0,3.5
 Auto dealers,count,2.0,2.0
-Auto manufacturers,mean,6.75,14.8571428571
-Auto manufacturers,count,4.0,7.0
-Business Services,mean,5.375,10.1111111111
-Business Services,count,8.0,9.0
-Conglomerate,mean,7.75,2.66666666667
+Auto manufacturers,mean,6.6,13.75
+Auto manufacturers,count,5.0,8.0
+Business Services,mean,5.08333333333,9.0
+Business Services,count,12.0,11.0
+Conglomerate,mean,7.75,2.0
 Conglomerate,count,4.0,3.0
-Consulting services,mean,10.4210526316,10.4545454545
-Consulting services,count,19.0,11.0
+Consulting services,mean,10.5909090909,10.4545454545
+Consulting services,count,22.0,11.0
 Diversified industrials,mean,6.0,12.0
 Diversified industrials,count,2.0,2.0
-Educational Services,mean,4.24,10.7826086957
-Educational Services,count,25.0,23.0
+Educational Services,mean,4.0,10.3846153846
+Educational Services,count,30.0,26.0
 Electronics Manufacturing,mean,0.0,25.3333333333
 Electronics Manufacturing,count,1.0,3.0
 Electronics Wholesaler,mean,6.0,
 Electronics Wholesaler,count,1.0,0.0
 FMCG,mean,8.33333333333,9.5
 FMCG,count,30.0,14.0
-Finance,mean,9.80392156863,9.78260869565
-Finance,count,51.0,23.0
-Government,mean,8.4,12.0
-Government,count,5.0,3.0
-Healthcare,mean,5.8,9.04761904762
-Healthcare,count,20.0,21.0
-Hospitality,mean,4.5,11.0
-Hospitality,count,8.0,7.0
-Industrial,mean,7.69230769231,8.57142857143
-Industrial,count,13.0,7.0
-Information Services,mean,9.58333333333,11.3333333333
-Information Services,count,12.0,9.0
-Insurance,mean,6.66666666667,9.13636363636
-Insurance,count,24.0,22.0
-Legal services,mean,15.9838709677,7.25
-Legal services,count,62.0,8.0
+Finance,mean,9.77777777778,9.56
+Finance,count,54.0,25.0
+Government,mean,6.0,12.0
+Government,count,7.0,5.0
+Healthcare,mean,5.39285714286,9.0
+Healthcare,count,28.0,29.0
+Hospitality,mean,3.45454545455,11.0
+Hospitality,count,11.0,9.0
+Industrial,mean,7.8,8.88888888889
+Industrial,count,15.0,9.0
+Information Services,mean,9.07692307692,11.3333333333
+Information Services,count,13.0,9.0
+Insurance,mean,6.61538461538,8.875
+Insurance,count,26.0,24.0
+Legal services,mean,15.7692307692,6.88888888889
+Legal services,count,65.0,9.0
 Maritime,mean,,12.0
 Maritime,count,0.0,1.0
-Media,mean,8.5652173913,8.72727272727
-Media,count,23.0,11.0
-Natural Resources,mean,7.66666666667,11.0454545455
-Natural Resources,count,24.0,22.0
-Nonprofit,mean,8.75,13.0909090909
-Nonprofit,count,16.0,11.0
+Media,mean,8.70833333333,8.72727272727
+Media,count,24.0,11.0
+Natural Resources,mean,7.23076923077,11.0869565217
+Natural Resources,count,26.0,23.0
+Nonprofit,mean,8.0,12.0
+Nonprofit,count,18.0,13.0
 Packaging,mean,12.0,0.0
 Packaging,count,1.0,1.0
-Pharmaceutical,mean,7.375,9.5
-Pharmaceutical,count,16.0,12.0
+Pharmaceutical,mean,8.05,10.2857142857
+Pharmaceutical,count,20.0,14.0
 Pharmacies and Drug Stores,mean,6.0,10.0
 Pharmacies and Drug Stores,count,3.0,3.0
+Public Relations,mean,3.5,
+Public Relations,count,2.0,0.0
 Publishing,mean,9.66666666667,5.66666666667
 Publishing,count,3.0,3.0
 Real Estate Company,mean,2.0,10.0
 Real Estate Company,count,4.0,3.0
 Real Estate Investment Trust,mean,6.0,6.0
 Real Estate Investment Trust,count,1.0,1.0
-Retail,mean,5.91891891892,8.94444444444
-Retail,count,37.0,36.0
-Services,mean,6.0,12.0
-Services,count,1.0,3.0
-Technology,mean,10.3863636364,8.14893617021
-Technology,count,88.0,47.0
+Research & Development,mean,6.0,6.0
+Research & Development,count,1.0,1.0
+Retail,mean,5.54545454545,8.71428571429
+Retail,count,44.0,42.0
+Services,mean,3.0,12.0
+Services,count,2.0,4.0
+Technology,mean,10.214953271,7.78181818182
+Technology,count,107.0,55.0
 Telecommunications,mean,7.0,8.0
 Telecommunications,count,10.0,6.0
-Transportation,mean,6.0,9.66666666667
-Transportation,count,9.0,12.0
-Unspecified,mean,5.69072164948,9.0
-Unspecified,count,97.0,51.0
+Transportation,mean,6.0,9.84615384615
+Transportation,count,9.0,13.0
+Unspecified,mean,5.0,9.58823529412
+Unspecified,count,57.0,34.0
