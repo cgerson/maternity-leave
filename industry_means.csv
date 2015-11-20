@@ -1,40 +1,41 @@
 industry_parsed,paid_leave,unpaid_leave
 Accounting services,10.0,8.5
-Advertising,6.36363636364,5.75
-Aerospace,4.28571428571,9.6
+Advertising,7.13333333333,4.375
+Aerospace,4.71428571429,9.6
 Auto dealers,8.0,3.5
 Auto manufacturers,6.6,13.75
-Business Services,5.08333333333,9.0
-Conglomerate,7.75,2.0
-Consulting services,10.5909090909,10.4545454545
-Diversified industrials,6.0,12.0
-Educational Services,4.0,10.3846153846
+Business Services,4.69230769231,9.46153846154
+Conglomerate,7.75,5.5
+Consulting services,10.5909090909,10.6923076923
+Diversified industrials,4.0,12.0
+Educational Services,4.3488372093,9.20512820513
 Electronics Manufacturing,0.0,25.3333333333
 Electronics Wholesaler,6.0,
-FMCG,8.33333333333,9.5
-Finance,9.77777777778,9.56
-Government,6.0,12.0
-Healthcare,5.39285714286,9.0
-Hospitality,3.45454545455,11.0
-Industrial,7.8,8.88888888889
-Information Services,9.07692307692,11.3333333333
-Insurance,6.61538461538,8.875
-Legal services,15.7692307692,6.88888888889
+FMCG,8.45161290323,9.0625
+Finance,9.83928571429,9.67857142857
+Fine Art Auctions,12.0,0.0
+Government,3.66666666667,12.3636363636
+Healthcare,5.08823529412,8.88571428571
+Hospitality,3.23076923077,10.8461538462
+Industrial,6.94117647059,9.2
+Information Services,9.15384615385,11.3333333333
+Insurance,6.39285714286,8.68
+Legal services,15.3676470588,6.8
 Maritime,,12.0
-Media,8.70833333333,8.72727272727
-Natural Resources,7.23076923077,11.0869565217
-Nonprofit,8.0,12.0
+Media,8.36,9.23076923077
+Natural Resources,7.14814814815,10.75
+Nonprofit,7.20833333333,11.25
 Packaging,12.0,0.0
-Pharmaceutical,8.05,10.2857142857
+Pharmaceutical,7.55,10.8
 Pharmacies and Drug Stores,6.0,10.0
 Public Relations,3.5,
 Publishing,9.66666666667,5.66666666667
-Real Estate Company,2.0,10.0
-Real Estate Investment Trust,6.0,6.0
+Real Estate Company,1.8,10.25
+Real Estate Investment Trust,9.0,3.0
 Research & Development,6.0,6.0
-Retail,5.54545454545,8.71428571429
-Services,3.0,12.0
-Technology,10.214953271,7.78181818182
-Telecommunications,7.0,8.0
+Retail,5.5306122449,8.6
+Services,2.75,12.0
+Technology,10.1652173913,7.73333333333
+Telecommunications,6.63636363636,8.14285714286
 Transportation,6.0,9.84615384615
-Unspecified,5.0,9.58823529412
+Unspecified,4.05882352941,8.0
