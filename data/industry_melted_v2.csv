@@ -1,0 +1,85 @@
+,industry,type_leave,count,mean
+0,Accounting services,paid_leave,5.0,10.0
+1,Accounting services,unpaid_leave,2.0,8.5
+2,Advertising,paid_leave,17.0,7.11764705882
+3,Advertising,unpaid_leave,8.0,4.375
+4,Aerospace,paid_leave,7.0,4.71428571429
+5,Aerospace,unpaid_leave,5.0,9.6
+6,Auto dealers,paid_leave,2.0,8.0
+7,Auto dealers,unpaid_leave,2.0,3.5
+8,Auto manufacturers,paid_leave,6.0,6.5
+9,Auto manufacturers,unpaid_leave,9.0,12.8888888889
+10,Business Services,paid_leave,14.0,4.78571428571
+11,Business Services,unpaid_leave,14.0,9.21428571429
+12,Conglomerate,paid_leave,4.0,7.75
+13,Conglomerate,unpaid_leave,4.0,5.5
+14,Consulting services,paid_leave,22.0,10.6363636364
+15,Consulting services,unpaid_leave,13.0,9.92307692308
+16,Design,paid_leave,1.0,16.0
+17,Design,unpaid_leave,0.0,
+18,Diversified industrials,paid_leave,4.0,4.5
+19,Diversified industrials,unpaid_leave,4.0,10.5
+20,Educational Services,paid_leave,45.0,4.95555555556
+21,Educational Services,unpaid_leave,42.0,8.64285714286
+22,Electronics Manufacturing,paid_leave,1.0,0.0
+23,Electronics Manufacturing,unpaid_leave,3.0,25.3333333333
+24,Electronics Wholesaler,paid_leave,1.0,6.0
+25,Electronics Wholesaler,unpaid_leave,0.0,
+26,FMCG,paid_leave,32.0,8.375
+27,FMCG,unpaid_leave,18.0,8.72222222222
+28,Finance,paid_leave,57.0,9.71929824561
+29,Finance,unpaid_leave,29.0,9.20689655172
+30,Fine Art Auctions,paid_leave,1.0,12.0
+31,Fine Art Auctions,unpaid_leave,1.0,0.0
+32,Government,paid_leave,13.0,3.84615384615
+33,Government,unpaid_leave,12.0,11.8333333333
+34,Healthcare,paid_leave,38.0,4.89473684211
+35,Healthcare,unpaid_leave,40.0,8.85
+36,Hospitality,paid_leave,14.0,3.0
+37,Hospitality,unpaid_leave,14.0,10.5
+38,Industrial,paid_leave,19.0,6.21052631579
+39,Industrial,unpaid_leave,12.0,9.16666666667
+40,Information Services,paid_leave,12.0,9.41666666667
+41,Information Services,unpaid_leave,8.0,12.0
+42,Insurance,paid_leave,29.0,6.1724137931
+43,Insurance,unpaid_leave,26.0,8.80769230769
+44,Legal services,paid_leave,70.0,15.2714285714
+45,Legal services,unpaid_leave,11.0,7.27272727273
+46,Maritime,paid_leave,0.0,
+47,Maritime,unpaid_leave,1.0,12.0
+48,Media,paid_leave,25.0,8.16
+49,Media,unpaid_leave,13.0,9.23076923077
+50,Natural Resources,paid_leave,28.0,7.10714285714
+51,Natural Resources,unpaid_leave,25.0,10.64
+52,Nonprofit,paid_leave,25.0,7.16
+53,Nonprofit,unpaid_leave,17.0,10.9411764706
+54,Packaging,paid_leave,1.0,12.0
+55,Packaging,unpaid_leave,1.0,0.0
+56,Pharmaceutical,paid_leave,22.0,7.31818181818
+57,Pharmaceutical,unpaid_leave,18.0,9.44444444444
+58,Pharmacies and Drug Stores,paid_leave,3.0,6.0
+59,Pharmacies and Drug Stores,unpaid_leave,3.0,10.0
+60,Public Relations,paid_leave,2.0,3.5
+61,Public Relations,unpaid_leave,1.0,0.0
+62,Publishing,paid_leave,3.0,10.3333333333
+63,Publishing,unpaid_leave,4.0,4.25
+64,Real Estate Company,paid_leave,5.0,1.8
+65,Real Estate Company,unpaid_leave,4.0,10.25
+66,Real Estate Investment Trust,paid_leave,2.0,9.0
+67,Real Estate Investment Trust,unpaid_leave,2.0,3.0
+68,Research & Development,paid_leave,1.0,6.0
+69,Research & Development,unpaid_leave,1.0,6.0
+70,Retail,paid_leave,53.0,5.39622641509
+71,Retail,unpaid_leave,49.0,8.51020408163
+72,Services,paid_leave,4.0,2.75
+73,Services,unpaid_leave,4.0,12.0
+74,Technology,paid_leave,123.0,9.87804878049
+75,Technology,unpaid_leave,65.0,7.46153846154
+76,Telecommunications,paid_leave,11.0,6.63636363636
+77,Telecommunications,unpaid_leave,7.0,8.14285714286
+78,Transportation,paid_leave,9.0,5.77777777778
+79,Transportation,unpaid_leave,13.0,9.46153846154
+80,Unspecified,paid_leave,1.0,8.0
+81,Unspecified,unpaid_leave,0.0,
+82,Wholesale,paid_leave,1.0,0.0
+83,Wholesale,unpaid_leave,0.0,

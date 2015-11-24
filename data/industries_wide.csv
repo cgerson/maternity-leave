@@ -1,41 +1,43 @@
 ,industry,count_paid,mean_paid,count_unpaid,mean_unpaid
 0,Accounting services,5.0,10.0,2.0,8.5
-1,Advertising,15.0,7.13333333333,8.0,4.375
+1,Advertising,17.0,7.11764705882,8.0,4.375
 2,Aerospace,7.0,4.71428571429,5.0,9.6
 3,Auto dealers,2.0,8.0,2.0,3.5
-4,Auto manufacturers,5.0,6.6,8.0,13.75
-5,Business Services,13.0,4.69230769231,13.0,9.46153846154
+4,Auto manufacturers,6.0,6.5,9.0,12.8888888889
+5,Business Services,14.0,4.78571428571,14.0,9.21428571429
 6,Conglomerate,4.0,7.75,4.0,5.5
-7,Consulting services,22.0,10.5909090909,13.0,10.6923076923
-8,Diversified industrials,3.0,4.0,3.0,12.0
-9,Educational Services,43.0,4.3488372093,39.0,9.20512820513
-10,Electronics Manufacturing,1.0,0.0,3.0,25.3333333333
-11,Electronics Wholesaler,1.0,6.0,0.0,
-12,FMCG,31.0,8.45161290323,16.0,9.0625
-13,Finance,56.0,9.83928571429,28.0,9.67857142857
-14,Fine Art Auctions,1.0,12.0,1.0,0.0
-15,Government,12.0,3.66666666667,11.0,12.3636363636
-16,Healthcare,34.0,5.08823529412,35.0,8.88571428571
-17,Hospitality,13.0,3.23076923077,13.0,10.8461538462
-18,Industrial,17.0,6.94117647059,10.0,9.2
-19,Information Services,13.0,9.15384615385,9.0,11.3333333333
-20,Insurance,28.0,6.39285714286,25.0,8.68
-21,Legal services,68.0,15.3676470588,10.0,6.8
-22,Maritime,0.0,,1.0,12.0
-23,Media,25.0,8.36,13.0,9.23076923077
-24,Natural Resources,27.0,7.14814814815,24.0,10.75
-25,Nonprofit,24.0,7.20833333333,16.0,11.25
-26,Packaging,1.0,12.0,1.0,0.0
-27,Pharmaceutical,20.0,7.55,15.0,10.8
-28,Pharmacies and Drug Stores,3.0,6.0,3.0,10.0
-29,Public Relations,2.0,3.5,0.0,
-30,Publishing,3.0,9.66666666667,3.0,5.66666666667
-31,Real Estate Company,5.0,1.8,4.0,10.25
-32,Real Estate Investment Trust,2.0,9.0,2.0,3.0
-33,Research & Development,1.0,6.0,1.0,6.0
-34,Retail,49.0,5.5306122449,45.0,8.6
-35,Services,4.0,2.75,4.0,12.0
-36,Technology,115.0,10.1652173913,60.0,7.73333333333
-37,Telecommunications,11.0,6.63636363636,7.0,8.14285714286
-38,Transportation,9.0,6.0,13.0,9.84615384615
-39,Unspecified,17.0,4.05882352941,12.0,8.0
+7,Consulting services,22.0,10.6363636364,13.0,9.92307692308
+8,Design,1.0,16.0,0.0,
+9,Diversified industrials,4.0,4.5,4.0,10.5
+10,Educational Services,45.0,4.95555555556,42.0,8.64285714286
+11,Electronics Manufacturing,1.0,0.0,3.0,25.3333333333
+12,Electronics Wholesaler,1.0,6.0,0.0,
+13,FMCG,32.0,8.375,18.0,8.72222222222
+14,Finance,57.0,9.71929824561,29.0,9.20689655172
+15,Fine Art Auctions,1.0,12.0,1.0,0.0
+16,Government,13.0,3.84615384615,12.0,11.8333333333
+17,Healthcare,38.0,4.89473684211,40.0,8.85
+18,Hospitality,14.0,3.0,14.0,10.5
+19,Industrial,19.0,6.21052631579,12.0,9.16666666667
+20,Information Services,12.0,9.41666666667,8.0,12.0
+21,Insurance,29.0,6.1724137931,26.0,8.80769230769
+22,Legal services,70.0,15.2714285714,11.0,7.27272727273
+23,Maritime,0.0,,1.0,12.0
+24,Media,25.0,8.16,13.0,9.23076923077
+25,Natural Resources,28.0,7.10714285714,25.0,10.64
+26,Nonprofit,25.0,7.16,17.0,10.9411764706
+27,Packaging,1.0,12.0,1.0,0.0
+28,Pharmaceutical,22.0,7.31818181818,18.0,9.44444444444
+29,Pharmacies and Drug Stores,3.0,6.0,3.0,10.0
+30,Public Relations,2.0,3.5,1.0,0.0
+31,Publishing,3.0,10.3333333333,4.0,4.25
+32,Real Estate Company,5.0,1.8,4.0,10.25
+33,Real Estate Investment Trust,2.0,9.0,2.0,3.0
+34,Research & Development,1.0,6.0,1.0,6.0
+35,Retail,53.0,5.39622641509,49.0,8.51020408163
+36,Services,4.0,2.75,4.0,12.0
+37,Technology,123.0,9.87804878049,65.0,7.46153846154
+38,Telecommunications,11.0,6.63636363636,7.0,8.14285714286
+39,Transportation,9.0,5.77777777778,13.0,9.46153846154
+40,Unspecified,1.0,8.0,0.0,
+41,Wholesale,1.0,0.0,0.0,
