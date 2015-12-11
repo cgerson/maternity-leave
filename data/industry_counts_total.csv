@@ -1,43 +1,44 @@
 ,industry_parsed
-Technology,128
-Legal services,70
-Finance,62
-Retail,62
-Educational Services,51
-Healthcare,47
-Natural Resources,36
-FMCG,33
-Insurance,33
-Media,28
-Nonprofit,26
-Consulting services,23
-Pharmaceutical,23
-Industrial,21
-Hospitality,20
-Business Services,18
-Advertising,17
-Government,17
-Transportation,16
-Information Services,13
+Technology,151
+Legal services,78
+Retail,73
+Finance,66
+Educational Services,59
+Healthcare,55
+Natural Resources,40
+FMCG,38
+Insurance,37
+Media,33
+Nonprofit,28
+Industrial,27
+Consulting services,25
+Pharmaceutical,25
+Hospitality,21
+Government,19
+Business Services,19
+Advertising,18
+Information Services,18
+Transportation,17
 Telecommunications,12
 Auto manufacturers,10
-Aerospace,8
+Aerospace,9
+Unspecified,9
+Real Estate Company,7
 Services,7
-Real Estate Company,5
-Accounting services,5
-Publishing,4
+Accounting services,6
+Publishing,6
+Diversified industrials,4
 Conglomerate,4
 Pharmacies and Drug Stores,4
-Diversified industrials,4
-Public Relations,3
+Public Relations,4
 Electronics Manufacturing,3
-Auto dealers,2
+Research & Development,2
 Real Estate Investment Trust,2
+Auto dealers,2
 Fine Art Auctions,1
-Packaging,1
-Maritime,1
 Wholesale,1
 Electronics Wholesaler,1
-Research & Development,1
-Unspecified,1
+Research,1
+Packaging,1
+Maritime,1
 Design,1
