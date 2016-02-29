@@ -7,7 +7,6 @@ div#container {
     background: white;
 }
 
-
 rect.background {
   fill: white;
 }
@@ -15,6 +14,7 @@ rect.background {
 .y.axis path, .axis line {
     fill: none;
     stroke: #000;
+    position: fixed;
   shape-rendering: crispEdges;
 }
 
@@ -48,14 +48,28 @@ rect:hover {
     stroke-dasharray: .9;
 }
 
+h1.title{
+    font: 20px sans-serif;
+    font-weight: bold;
+    align: center;
+    margin-top: 1.5cm;
+
+}
+
+h5.title {
+    align: center;
+    font: 16px sans-serif;
+    font-weight: bold;
+}
+
 text {
   font: 10px sans-serif;
 }
 
-
-.label{
+p#header{
+    text-align: center;
     font-weight: normal;
-    font-size: 11px;
+    font: 12px sans-serif;
 }
 
 

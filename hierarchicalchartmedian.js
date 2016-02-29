@@ -35,7 +35,7 @@ var sample_data = {
     ]
 }
 
-var margin = {top: 80, right: 100, bottom: 30, left: 300},
+var margin = {top: 50, right: 100, bottom: 30, left: 300},
     width = 1000 - margin.left - margin.right,
     height = 5000
     //height = 5000 - margin.top - margin.bottom;
@@ -64,18 +64,22 @@ var xAxis = d3.svg.axis()
     .scale(x)
     .orient("top");
 
+/**
 var input = d3.select("#checkBoxDiv")
     .append("input")
     .attr("type","checkbox")
-    //.attr("checked","false")
     .style("position","relative")
-    .on("change", check);
+    .on("change", sort);
 
 var inputLabel = d3.select("#checkBoxDiv")
     .append("text")
     .attr("class","label")
     .style("position","relative")
     .text("Sort Alphabetically");
+**/
+
+d3.select("#input").on("change", sort);
+
 /**
 d3.select("#container")
     .append("svg:svg")
@@ -87,7 +91,7 @@ var svg_width = width + margin.left + margin.right;
 var svg_height = height + margin.top + margin.bottom;
 
 var svg = d3.select("#container").append("svg")
-    .attr("viewBox", "0,0,"+svg_width+",5000")
+    .attr("viewBox", "0,0,"+svg_width+",4000")
     //.attr("width", svg_width)
     //.attr("height", svg_height)
     .append("g")
@@ -112,24 +116,25 @@ svg.append("text")
     .attr("class", "x label")
     .attr("text-anchor", "end")
     .attr("x", width)
-    .attr("y", 50 - margin.top)
+    .attr("y", 20 - margin.top)
     .text("(Number of weeks of paid maternity leave)");
 
 // Instruction text: how to interact.
 // Ideally shouldn't need instructions
+/**
 svg.append("text")
     .attr("class", "instructions")
     .attr("text-anchor", "left")
     .attr("x", 0)
     .attr("y", 20 - margin.top)
         .text("Click on an industry name to find company-level information. Click on background to return to previous view.");
+**/
 
 var rootData;
 
 var file_name = "ML_data_paid_median.json";
 
 d3.json(file_name, function(error, data) {
-
     if (error) throw error;
 
     rootData = data; // save root data object
@@ -138,11 +143,9 @@ d3.json(file_name, function(error, data) {
     x.domain([0, 52]).nice();
     
     down(data, 0);
-
 });
 
-function check(){
-
+function sort(){
     console.log(this.checked);
 
     var sortalpha = function(a,b) {return d3.descending(b.key, a.key);};
@@ -155,8 +158,7 @@ function check(){
     partition.sort(this.checked ? sortalpha : sortmedian);
     partition.nodes(rootData); // sort all data from root
 
-    down(data, 0); // draw starting at current data object
-    
+    down(data, 0); // draw starting at current data object 
 }
 
 function down(d, i) { 
@@ -164,15 +166,15 @@ function down(d, i) {
     if (!d.children || this.__transition__) return;
     var end = duration + d.children.length * delay;
 
-    console.log("children length",d.children.length);
-
   // Mark any currently-displayed bars as exiting.
   var exit = svg.selectAll(".enter")
       .attr("class", "exit");
 
     // Exit group label ?
+    /**
     var exitLabel = svg.selectAll(".industryType")
         .attr("class", "exit");
+**/
 
     //Median line
     var exitMedianLine = svg.selectAll(".medianLine")
@@ -194,6 +196,10 @@ function down(d, i) {
   enter.select("text").style("fill-opacity", 1e-6);
     enter.select("rect").style("fill", color(true));
 
+    d3.select("h1.title")
+        .text("PAID MATERNITY LEAVE INFORMATION: "+d.key.toString().toUpperCase());
+
+    /**
     // Industry name
    svg.select("g")
     .append("text")
@@ -202,6 +208,7 @@ function down(d, i) {
     .attr("x", 0)
     .attr("y", 50 - margin.top)
         .text(d.key.toString().toUpperCase());
+**/
 
   // Update the x-scale domain.
   //x.domain([0, d3.max(d.children, function(d) { return d.median; })]).nice();
@@ -235,7 +242,7 @@ function down(d, i) {
       .style("opacity", 1e-6)
       .remove();
     
-    exitLabel.transition().duration(0).remove();
+    //exitLabel.transition().duration(0).remove();
 
     exitMedianLine.transition().duration(1).remove();
 
@@ -266,8 +273,10 @@ function up(d) {
       .attr("class", "exit");
 
     // Exit group label ?
+    /**
     var exitLabel = svg.selectAll(".industryType")
         .attr("class", "exit");
+**/
 
     //Median line
     var exitMedianLine = svg.selectAll(".medianLine")
@@ -286,6 +295,7 @@ function up(d) {
         //.filter(function(p) { return p === d; })
     //.style("fill-opacity", 1e-6);
 
+    /**
     svg.select("g")
     .append("text")
     .attr("class", "industryType")
@@ -293,7 +303,10 @@ function up(d) {
     .attr("x", 0)
     .attr("y", 50 - margin.top)
         .text(d.parent.key.toString().toUpperCase());
+    **/
 
+    d3.select("h1.title")
+        .text("PAID MATERNITY LEAVE INFORMATION: "+d.parent.key.toString().toUpperCase());
     
   // Update the x-scale domain.
     //x.domain([0, d3.max(d.parent.children, function(d) { return d.value/d.count; })]).nice();
@@ -341,7 +354,8 @@ function up(d) {
     //.duration(duration)
         .remove();
 
-    exitLabel.transition().duration(0).remove();
+    
+    //exitLabel.transition().duration(0).remove();
 
     exitMedianLine.transition().duration(1).remove();
     
@@ -397,7 +411,7 @@ function stack(i) {
 
 }
 
-//Draws a vertical line at average weeks of leave within industry
+// Draw a vertical line at median weeks of leave within industry
 function drawMedian(d){
 
     var m = d3.median(d.children, function(d) { return d.median; });
